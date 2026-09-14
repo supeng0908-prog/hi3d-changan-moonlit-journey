@@ -11,3 +11,6 @@ WASD跑步，空格连续跳跃，Shift御剑或降落；飞行时空格升、C�
 跑步数据来源 CMU Graphics Lab Motion Capture Database 09_01，Bruce Hahne BVH转换。许可与说明见 site/hi3d-mocap-license.txt。Three.js依赖保留原始许可证头。
 
 更新：修改site目录后推送main，由GitHub Actions部署。
+
+## 移动流畅度修复
+镜头与施法视线使用轻量碰撞体，取消周期性高模逐三角检测；跟随不再在路径节点停帧。均分物理子步，平滑跑步速度切换，界面按10 Hz刷新。模型、贴图和原始动作数据保持不变。
